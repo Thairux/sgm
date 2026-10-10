@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sgm-protocol.dev/schemas/memory.schema.json",
+  "title": "SGM Memory Record",
+  "description": "The atomic unit of stored memory in SGM. Normative structure for spec/memory.md.",
+  "type": "object",
+  "required": ["id", "type", "scope", "created_at", "schema_version", "provenance"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable, unique record identity within its scope."
+    },
+    "type": {
+      "type": "string",
+      "enum": ["fact", "note", "decision", "rule", "status", "task", "handoff", "annotation"],
+      "description": "Record type. Unknown types MUST be stored losslessly and MUST NOT be rejected."
+    },
+    "title": { "type": "string" },
+    "content": { "type": "string" },
+    "reference": { "$ref": "#/$defs/reference" },
+    "scope": { "$ref": "#/$defs/scope" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "links": { "type": "array", "items": { "type": "string" } },
+    "annotations": {
+      "type": "array",
+      "items": { "$ref": "annotation.schema.json" }
+    },
+    "sensitivity": { "$ref": "#/$defs/sensitivity" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "version": { "type": "integer", "minimum": 1, "default": 1 },
+    "schema_version": {
+      "type": "string",
+      "description": "The SGM schema version this record conforms to."
+    },
+    "provenance": { "$ref": "#/$defs/provenance" },
+    "metadata": {
+      "type": "object",
+      "description": "Implementation-specific extras. MUST round-trip losslessly."
+    }
+  },
+  "$defs": {
+    "reference": {
+      "type": "object",
+      "required": ["kind", "hash"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "type": "string", "examples": ["content-hash", "uri"] },
+        "hash": { "type": "string" },
+        "encoding": { "type": "string" },
+        "bytes": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "description": "Isolation boundary. Narrower scopes are contained in broader ones.",
+      "minProperties": 1,
+      "properties": {
+        "user": { "type": "string" },
+        "organization": { "type": "string" },
+        "workspace": { "type": "string" },
+        "project": { "type": "string" },
+        "session": { "type": "string" },
+        "task": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "sensitivity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "level": { "enum": ["public", "internal", "confidential", "restricted"] },
+        "contains_secrets": { "type": "boolean" },
+        "pii": { "type": "boolean" }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["agent", "created_at", "origin", "scope"],
+      "additionalProperties": false,
+      "properties": {
+        "agent": { "type": "string", "description": "Creator identity (human, tool, or agent)." },
+        "session": { "type": "string" },
+        "origin": { "type": "string", "examples": ["cli", "mcp", "http", "import"] },
+        "scope": { "$ref": "#/$defs/scope" },
+        "created_at": { "type": "string", "format": "date-time" },
+        "modified": { "type": "boolean" },
+        "modified_at": { "type": "string", "format": "date-time" },
+        "modified_by": { "type": "string" },
+        "links": { "type": "array", "items": { "type": "string" } },
+        "source": { "type": "string" }
+      }
+    }
+  }
+}

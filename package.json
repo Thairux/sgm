@@ -1,0 +1,26 @@
+{
+  "name": "sgm-protocol",
+  "version": "0.1.0",
+  "description": "Shared Global Memory — an open protocol for persistent, interoperable memory and context sharing between AI agents and software tools.",
+  "type": "module",
+  "license": "AGPL-3.0",
+  "keywords": ["protocol", "ai-agents", "memory", "context", "interoperability", "mcp"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Thairux/sgm.git"
+  },
+  "homepage": "https://thairux.github.io/sgm/",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
+    "conformance": "bun run reference/src/cli.ts conformance",
+    "validate:schemas": "node scripts/validate-schemas.mjs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.5.0"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  }
+}

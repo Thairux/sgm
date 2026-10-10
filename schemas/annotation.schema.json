@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sgm-protocol.dev/schemas/annotation.schema.json",
+  "title": "SGM Annotation",
+  "description": "Structured metadata attached to a memory record. Normative structure for spec/annotations.md.",
+  "type": "object",
+  "required": ["kind", "value"],
+  "additionalProperties": false,
+  "properties": {
+    "kind": {
+      "type": "string",
+      "description": "Annotation type. Known kinds: rationale, status, state, as_of, source, confidence, what_i_did, next, blockers, files_touched, open_questions. Unknown kinds MUST be preserved."
+    },
+    "value": {
+      "description": "The annotation payload. Usually a string; MAY be any JSON value.",
+      "type": ["string", "number", "boolean", "object", "array", "null"]
+    }
+  }
+}

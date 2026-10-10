@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sgm-protocol.dev/schemas/context.schema.json",
+  "title": "SGM Context",
+  "description": "The assembled, consumable object produced from retrieved records. Normative structure for spec/context.md.",
+  "type": "object",
+  "required": ["id", "scope", "records", "assembled_at", "provenance"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "scope": {
+      "type": "object",
+      "minProperties": 1,
+      "properties": {
+        "user": { "type": "string" },
+        "organization": { "type": "string" },
+        "workspace": { "type": "string" },
+        "project": { "type": "string" },
+        "session": { "type": "string" },
+        "task": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "records": {
+      "type": "array",
+      "items": { "$ref": "memory.schema.json" },
+      "description": "Retrieved memory records. May be empty — an empty context is valid."
+    },
+    "assembled_at": { "type": "string", "format": "date-time" },
+    "provenance": {
+      "type": "object",
+      "required": ["agent"],
+      "properties": {
+        "agent": { "type": "string" },
+        "session": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "summary": { "type": "string" }
+  }
+}

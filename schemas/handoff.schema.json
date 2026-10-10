@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sgm-protocol.dev/schemas/handoff.schema.json",
+  "title": "SGM Handoff",
+  "description": "A resumable cross-tool work package. Normative structure for spec/handoffs.md.",
+  "type": "object",
+  "required": ["id", "type", "scope", "created_at", "schema_version", "provenance"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "type": { "const": "handoff" },
+    "title": { "type": "string" },
+    "content": { "type": "string" },
+    "scope": {
+      "type": "object",
+      "minProperties": 1,
+      "properties": {
+        "user": { "type": "string" },
+        "organization": { "type": "string" },
+        "workspace": { "type": "string" },
+        "project": { "type": "string" },
+        "session": { "type": "string" },
+        "task": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "annotations": {
+      "type": "array",
+      "description": "Canonical handoff sections. SHOULD include what_i_did, next, blockers, files_touched, open_questions, as_of.",
+      "items": { "$ref": "annotation.schema.json" }
+    },
+    "created_at": { "type": "string", "format": "date-time" },
+    "schema_version": { "type": "string" },
+    "provenance": {
+      "type": "object",
+      "required": ["agent", "created_at", "origin", "scope"],
+      "additionalProperties": false,
+      "properties": {
+        "agent": { "type": "string" },
+        "session": { "type": "string" },
+        "origin": { "type": "string" },
+        "scope": { "type": "object" },
+        "created_at": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sgm-protocol.dev/schemas/capability.schema.json",
+  "title": "SGM Capability Discovery",
+  "description": "The object returned during capability discovery. Normative structure for spec/capabilities.md.",
+  "type": "object",
+  "required": ["protocol_version", "implementation", "capabilities"],
+  "additionalProperties": false,
+  "properties": {
+    "protocol_version": {
+      "type": "string",
+      "description": "The SGM specification version this implementation conforms to."
+    },
+    "implementation": {
+      "type": "string",
+      "description": "Name of the implementation."
+    },
+    "implementation_version": {
+      "type": "string",
+      "description": "Version of the implementation. Never part of protocol identity."
+    },
+    "capabilities": {
+      "type": "array",
+      "description": "Capability profiles supported. 'core' is always present.",
+      "items": {
+        "type": "string",
+        "enum": ["core", "collaboration", "code-intelligence", "history", "transport"]
+      },
+      "contains": { "const": "core" }
+    },
+    "transports": {
+      "type": "array",
+      "description": "Transport bindings offered, if the transport capability is advertised.",
+      "items": { "type": "string", "enum": ["mcp", "http", "cli"] }
+    },
+    "limits": {
+      "type": "object",
+      "description": "Implementation limits a consumer should respect.",
+      "additionalProperties": false,
+      "properties": {
+        "max_records_per_retrieve": { "type": "integer", "minimum": 1 },
+        "max_content_bytes": { "type": "integer", "minimum": 1 }
+      }
+    }
+  }
+}
