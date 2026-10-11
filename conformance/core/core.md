@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Core Conformance Suite
+permalink: /conformance/core/
 ---
 
 Tests the mandatory SGM Core capabilities: **Store, Retrieve, Read, Identity,

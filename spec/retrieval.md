@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SGM Retrieval & References
+permalink: /spec/retrieval/
 ---
 
 Retrieval is how stored memory is recalled and turned into usable context. This

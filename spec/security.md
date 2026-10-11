@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SGM Security
+permalink: /spec/security/
 ---
 
 SGM defines the *boundaries* an implementation must enforce, while leaving the

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SGM Annotations
+permalink: /spec/annotations/
 ---
 
 Annotations are structured metadata attached to memory that is not itself the

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Security Conformance Suite
+permalink: /conformance/security/
 ---
 
 Tests the isolation and provenance-integrity guarantees from

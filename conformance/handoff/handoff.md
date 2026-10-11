@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Handoff Conformance Suite
+permalink: /conformance/handoff/
 ---
 
 Tests the cross-tool handoff guarantees from

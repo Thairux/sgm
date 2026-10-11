@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SGM Versioning
+permalink: /spec/versioning/
 ---
 
 SGM versions the **protocol** independently from any **implementation** or

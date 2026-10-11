@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SGM Errors
+permalink: /spec/errors/
 ---
 
 SGM defines a small, transport-independent error model. The same error codes

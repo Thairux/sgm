@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Retrieval Conformance Suite
+permalink: /conformance/retrieval/
 ---
 
 Tests the retrieval and context guarantees from

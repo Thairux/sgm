@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SGM Handoffs
+permalink: /spec/handoffs/
 ---
 
 A **handoff** is the record type that makes cross-tool and cross-agent work

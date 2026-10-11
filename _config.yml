@@ -33,6 +33,9 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+# Spec + conformance docs carry an explicit `permalink:` in their frontmatter
+# (e.g. /spec/memory/) so they render at clean nested URLs.
+
 # Folders kept in the repo for developers but not rendered into the site.
 exclude:
   - docs

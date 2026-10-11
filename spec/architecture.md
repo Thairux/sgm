@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SGM Architecture
+permalink: /spec/architecture/
 ---
 
 ## The four layers

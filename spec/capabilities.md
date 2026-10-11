@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SGM Capabilities
+permalink: /spec/capabilities/
 ---
 
 SGM avoids making every feature mandatory. It defines a small **Core** that

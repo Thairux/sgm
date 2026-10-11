@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SGM Overview
+permalink: /spec/overview/
 ---
 
 ## What SGM is

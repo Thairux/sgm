@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SGM Context
+permalink: /spec/context/
 ---
 
 A **context** is the assembled, consumable object produced from one or more

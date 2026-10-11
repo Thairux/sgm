@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SGM Terminology
+permalink: /spec/terminology/
 ---
 
 This document defines the vocabulary used throughout the SGM specification.

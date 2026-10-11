@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SGM Scopes
+permalink: /spec/scopes/
 ---
 
 Scope is the isolation boundary that keeps memory from leaking across contexts.

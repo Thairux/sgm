@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SGM Memory Model
+permalink: /spec/memory/
 ---
 
 The memory record is the atomic unit of shared memory in SGM. This document

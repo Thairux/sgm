@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Annotations Conformance Suite
+permalink: /conformance/annotations/
 ---
 
 Tests annotation fidelity from [spec/annotations.md](../spec/annotations.md).

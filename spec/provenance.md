@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SGM Provenance
+permalink: /spec/provenance/
 ---
 
 Memory must not be anonymous text. Provenance is the who/what/when/where
