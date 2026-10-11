@@ -1,4 +1,7 @@
-# SGM Terminology
+---
+layout: default
+title: SGM Terminology
+---
 
 This document defines the vocabulary used throughout the SGM specification.
 Terms are listed alphabetically within each group.
@@ -27,7 +30,7 @@ thing SGM shares. It is scoped (see [scopes.md](scopes.md)).
 The atomic unit of stored memory. A record has a stable **identity**, a
 **type**, optional **content** or a **reference** to stored content, **scope**,
 **timestamps**, and **provenance**. Defined in [memory.md](memory.md); structured
-by [`memory.schema.json`](../schemas/memory.schema.json).
+by [`memory.schema.json`](https://github.com/Thairux/sgm/blob/main/schemas/memory.schema.json).
 
 ### Reference
 
@@ -118,7 +121,7 @@ The version of a specific SGM implementation. Never part of protocol identity.
 ### Transport binding
 
 A concrete way to invoke SGM operations (MCP, HTTP, CLI). A binding is labeled
-as a binding, never as the protocol. See [transports/](../transports/).
+as a binding, never as the protocol. See [transports/](https://github.com/Thairux/sgm/blob/main/tree/main/transports/).
 
 ## Records taxonomy
 

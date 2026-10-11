@@ -1,4 +1,7 @@
-# SGM Annotations
+---
+layout: default
+title: SGM Annotations
+---
 
 Annotations are structured metadata attached to memory that is not itself the
 primary content. They let an agent distinguish a *decision* from a *fact* from
@@ -86,7 +89,7 @@ array. Common `kind` values: `rationale`, `status`, `state`, `as_of`, `source`,
 ]
 ```
 
-Normative structure: [`annotation.schema.json`](../schemas/annotation.schema.json).
+Normative structure: [`annotation.schema.json`](https://github.com/Thairux/sgm/blob/main/schemas/annotation.schema.json).
 
 ## Why this matters for AI memory
 

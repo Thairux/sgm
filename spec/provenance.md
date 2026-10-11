@@ -1,4 +1,7 @@
-# SGM Provenance
+---
+layout: default
+title: SGM Provenance
+---
 
 Memory must not be anonymous text. Provenance is the who/what/when/where
 metadata that lets a consumer judge whether a record is trustworthy, current,

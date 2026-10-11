@@ -1,4 +1,7 @@
-# SGM Errors
+---
+layout: default
+title: SGM Errors
+---
 
 SGM defines a small, transport-independent error model. The same error codes
 apply whether the operation arrived over MCP, HTTP, or CLI — the binding maps

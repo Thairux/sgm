@@ -1,4 +1,7 @@
-# SGM Security
+---
+layout: default
+title: SGM Security
+---
 
 SGM defines the *boundaries* an implementation must enforce, while leaving the
 *mechanism* implementation-specific. This document covers sensitivity metadata,
@@ -60,7 +63,7 @@ MUST preserve provenance unmodified — tampering with it would defeat this.
 ## Licensing
 
 SGM is released under the **GNU Affero General Public License v3.0**
-([LICENSE](../LICENSE)) for the entire repository — specification, schemas,
+([LICENSE](https://github.com/Thairux/sgm/blob/main/LICENSE)) for the entire repository — specification, schemas,
 reference implementation, and conformance tests alike.
 
 ### Why AGPL for the whole repo
@@ -85,8 +88,8 @@ network service (an MCP or HTTP SGM server):
 - **Offering SGM as a network service** using modified code from this repository
   triggers the AGPL source-offer requirement.
 
-See [LICENSE](../LICENSE) for the full terms.
+See [LICENSE](https://github.com/Thairux/sgm/blob/main/LICENSE) for the full terms.
 
 ## Reporting security issues
 
-See [SECURITY.md](../SECURITY.md).
+See [SECURITY.md](https://github.com/Thairux/sgm/blob/main/SECURITY.md).

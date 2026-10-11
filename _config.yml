@@ -1,0 +1,48 @@
+title: SGM — Shared Global Memory
+description: An open protocol for persistent, interoperable memory and context sharing between AI agents and software tools.
+url: "https://thairux.github.io"
+baseurl: "/sgm"
+
+author:
+  name: Peter Thairu Muigai
+  email: ptmthairu@gmail.com
+  location: Lanet, Nakuru, Kenya
+
+navigation:
+  - name: Overview
+    url: /
+  - name: Specification
+    url: /spec/
+  - name: Schemas
+    url: /schemas/
+  - name: Conformance
+    url: /conformance/
+  - name: GitHub
+    url: https://github.com/Thairux/sgm
+
+social_profiles:
+  github: "https://github.com/Thairux/sgm"
+  twitter: ""
+  instagram: ""
+  facebook: ""
+  threads: ""
+  discord: ""
+  steam: ""
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Folders kept in the repo for developers but not rendered into the site.
+exclude:
+  - docs
+  - examples
+  - transports
+  - reference/src
+  - scripts
+  - package.json
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+

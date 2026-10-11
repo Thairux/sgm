@@ -1,4 +1,7 @@
-# SGM Context
+---
+layout: default
+title: SGM Context
+---
 
 A **context** is the assembled, consumable object produced from one or more
 retrieved memory records. Where a memory record is the stored unit, a context
@@ -26,7 +29,7 @@ is the *delivery* unit — what one tool hands to another.
 | `provenance` | yes | Who assembled it (see [provenance.md](provenance.md)) |
 | `summary` | no | Optional digest |
 
-Normative structure: [`context.schema.json`](../schemas/context.schema.json).
+Normative structure: [`context.schema.json`](https://github.com/Thairux/sgm/blob/main/schemas/context.schema.json).
 
 ## Semantics
 

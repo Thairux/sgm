@@ -1,4 +1,7 @@
-# SGM Versioning
+---
+layout: default
+title: SGM Versioning
+---
 
 SGM versions the **protocol** independently from any **implementation** or
 **transport binding**. An implementation's version number is never part of the
@@ -31,7 +34,7 @@ SGM is at **0.1.0 (draft / experimental)**. Before 1.0:
 
 - it is acceptable to be explicitly experimental/draft,
 - but semantics MUST NOT change casually — every change documents its
-  compatibility impact in [CHANGELOG.md](../CHANGELOG.md),
+  compatibility impact in [CHANGELOG.md](https://github.com/Thairux/sgm/blob/main/CHANGELOG.md),
 - a `minor` bump MAY carry breaking changes while pre-1.0, but this MUST be
   called out explicitly.
 

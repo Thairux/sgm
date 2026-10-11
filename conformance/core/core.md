@@ -1,4 +1,7 @@
-# Core Conformance Suite
+---
+layout: default
+title: Core Conformance Suite
+---
 
 Tests the mandatory SGM Core capabilities: **Store, Retrieve, Read, Identity,
 Scope, Discovery**. Every conforming implementation MUST pass all of these.

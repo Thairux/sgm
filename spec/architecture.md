@@ -1,4 +1,7 @@
-# SGM Architecture
+---
+layout: default
+title: SGM Architecture
+---
 
 ## The four layers
 
@@ -26,7 +29,7 @@ wrong.
 
 ### 2. Schemas
 
-The JSON Schemas in [`../schemas/`](../schemas/). These define the *structure*
+The JSON Schemas in [`../schemas/`](https://github.com/Thairux/sgm/blob/main/schemas/). These define the *structure*
 of every protocol object: required fields, types, enums, and relationships.
 The schemas are normative for shape; the spec is normative for semantics. A
 conforming implementation MUST satisfy both.
@@ -84,7 +87,7 @@ only this public repository:
 
 ## Transports are outside the core
 
-Transport bindings live in [`../transports/`](../transports/), outside the
+Transport bindings live in [`../transports/`](https://github.com/Thairux/sgm/blob/main/tree/main/transports/), outside the
 protocol core. A binding:
 
 - MUST be labeled a binding, not the protocol,

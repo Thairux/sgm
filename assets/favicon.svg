@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Thairux favicon">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dfb3af" />
+      <stop offset="55%" stop-color="#e5c977" />
+      <stop offset="100%" stop-color="#8b5d45" />
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#bg)" />
+  <path d="M20 18h24v7H35v21h-6V25h-9z" fill="#2b1a12" />
+</svg>

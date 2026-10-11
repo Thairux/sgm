@@ -1,4 +1,7 @@
-# Handoff Conformance Suite
+---
+layout: default
+title: Handoff Conformance Suite
+---
 
 Tests the cross-tool handoff guarantees from
 [spec/handoffs.md](../spec/handoffs.md). Requires the **collaboration**

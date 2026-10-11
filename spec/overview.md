@@ -1,4 +1,7 @@
-# SGM Overview
+---
+layout: default
+title: SGM Overview
+---
 
 ## What SGM is
 
@@ -79,7 +82,7 @@ SGM is **not** an MCP protocol. MCP is one supported *transport binding*.
 
 The same SGM implementation SHOULD be usable through multiple transports. A
 transport-specific binding is labeled as a binding, never as part of the core
-protocol. See [transports/](../transports/).
+protocol. See [transports/](https://github.com/Thairux/sgm/blob/main/tree/main/transports/).
 
 ## Core vs optional
 

@@ -1,4 +1,7 @@
-# Security Conformance Suite
+---
+layout: default
+title: Security Conformance Suite
+---
 
 Tests the isolation and provenance-integrity guarantees from
 [spec/scopes.md](../spec/scopes.md), [spec/provenance.md](../spec/provenance.md),

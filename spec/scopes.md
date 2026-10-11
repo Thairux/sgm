@@ -1,4 +1,7 @@
-# SGM Scopes
+---
+layout: default
+title: SGM Scopes
+---
 
 Scope is the isolation boundary that keeps memory from leaking across contexts.
 Despite the name *Shared Global Memory*, SGM memory is **not** globally public —

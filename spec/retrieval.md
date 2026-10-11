@@ -1,4 +1,7 @@
-# SGM Retrieval & References
+---
+layout: default
+title: SGM Retrieval & References
+---
 
 Retrieval is how stored memory is recalled and turned into usable context. This
 document defines the retrieval contract: what MUST be observable, and what is

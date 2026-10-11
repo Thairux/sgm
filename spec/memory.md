@@ -1,8 +1,11 @@
-# SGM Memory Model
+---
+layout: default
+title: SGM Memory Model
+---
 
 The memory record is the atomic unit of shared memory in SGM. This document
 defines its fields, identity, content model, and lifecycle semantics. The
-normative structure is [`memory.schema.json`](../schemas/memory.schema.json).
+normative structure is [`memory.schema.json`](https://github.com/Thairux/sgm/blob/main/schemas/memory.schema.json).
 
 ## Required fields
 

@@ -1,4 +1,7 @@
-# SGM Handoffs
+---
+layout: default
+title: SGM Handoffs
+---
 
 A **handoff** is the record type that makes cross-tool and cross-agent work
 resumable without re-derivation. It is the reason SGM exists: when you switch
@@ -27,7 +30,7 @@ blocking.
 }
 ```
 
-Normative structure: [`handoff.schema.json`](../schemas/handoff.schema.json).
+Normative structure: [`handoff.schema.json`](https://github.com/Thairux/sgm/blob/main/schemas/handoff.schema.json).
 
 ## The canonical handoff sections
 
@@ -77,7 +80,7 @@ Coding Tool A                    SGM                     Coding Tool B
 ```
 
 Because the handoff carries scope + provenance + the canonical sections, Tool B
-resumes with zero re-explanation. See [examples/cross-tool/](../examples/cross-tool/).
+resumes with zero re-explanation. See [examples/cross-tool/](https://github.com/Thairux/sgm/blob/main/tree/main/examples/cross-tool/).
 
 ## Multi-agent flow
 

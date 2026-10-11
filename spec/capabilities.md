@@ -1,4 +1,7 @@
-# SGM Capabilities
+---
+layout: default
+title: SGM Capabilities
+---
 
 SGM avoids making every feature mandatory. It defines a small **Core** that
 every conformant implements, plus **optional capability profiles** that an
@@ -86,7 +89,7 @@ peer supports it. Discovery returns the peer's capability set:
   `collaboration` and the peer doesn't advertise it, it MUST degrade gracefully
   (store as `note`/`fact`) rather than fail.
 
-Normative structure: [`capability.schema.json`](../schemas/capability.schema.json).
+Normative structure: [`capability.schema.json`](https://github.com/Thairux/sgm/blob/main/schemas/capability.schema.json).
 
 ## Interoperability requirement
 

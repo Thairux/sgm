@@ -1,4 +1,7 @@
-# Annotations Conformance Suite
+---
+layout: default
+title: Annotations Conformance Suite
+---
 
 Tests annotation fidelity from [spec/annotations.md](../spec/annotations.md).
 Requires the **collaboration** capability.

@@ -1,4 +1,7 @@
-# Retrieval Conformance Suite
+---
+layout: default
+title: Retrieval Conformance Suite
+---
 
 Tests the retrieval and context guarantees from
 [spec/retrieval.md](../spec/retrieval.md) and [spec/context.md](../spec/context.md).
